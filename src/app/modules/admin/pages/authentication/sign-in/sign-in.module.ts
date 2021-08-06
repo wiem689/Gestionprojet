@@ -18,34 +18,34 @@ import { SignInSplitScreenReversedComponent } from 'app/modules/admin/pages/auth
 
 const routes: Routes = [
     {
-        path    : 'sign-in',
+        path: 'sign-in',
         children: [
             {
-                path     : 'classic',
+                path: 'classic',
                 component: SignInClassicComponent
             },
             {
-                path     : 'modern',
+                path: 'modern',
                 component: SignInModernComponent
             },
             {
-                path     : 'modern-reversed',
+                path: 'modern-reversed',
                 component: SignInModernReversedComponent
             },
             {
-                path     : 'split-screen',
+                path: 'split-screen',
                 component: SignInSplitScreenComponent
             },
             {
-                path     : 'split-screen-reversed',
+                path: 'split-screen-reversed',
                 component: SignInSplitScreenReversedComponent
             },
             {
-                path     : 'fullscreen',
+                path: 'fullscreen',
                 component: SignInFullscreenComponent
             },
             {
-                path     : 'fullscreen-reversed',
+                path: 'fullscreen-reversed',
                 component: SignInFullscreenReversedComponent
             }
         ]
@@ -62,7 +62,7 @@ const routes: Routes = [
         SignInSplitScreenComponent,
         SignInSplitScreenReversedComponent
     ],
-    imports     : [
+    imports: [
         RouterModule.forChild(routes),
         MatButtonModule,
         MatCheckboxModule,
@@ -74,6 +74,5 @@ const routes: Routes = [
         SharedModule
     ]
 })
-export class SignInModule
-{
+export class SignInModule {
 }
